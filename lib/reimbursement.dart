@@ -1,20 +1,22 @@
 
+import 'package:crmapp/reim_history.dart';
 import 'package:crmapp/request.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'add_reim.dart';
 import 'history.dart';
 
-class LeaveRequestTabs extends StatefulWidget {
-  const LeaveRequestTabs({super.key});
+class Reimbursement extends StatefulWidget {
+  const Reimbursement({super.key});
 
   @override
-  State<LeaveRequestTabs> createState() => _LeaveRequestTabsState();
+  State<Reimbursement> createState() => _ReimbursementState();
 }
 
-class _LeaveRequestTabsState extends State<LeaveRequestTabs>
+class _ReimbursementState extends State<Reimbursement>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
 
@@ -44,16 +46,16 @@ class _LeaveRequestTabsState extends State<LeaveRequestTabs>
           appBar: PreferredSize(
             preferredSize: Size.fromHeight(100.0), // Increase height here (e.g., 120.0)
             child: AppBar(
+              leading: IconButton(onPressed: () {
+                Navigator.pop(context);
+              }, icon: Icon(CupertinoIcons.back,color: Colors.white,),),
               backgroundColor: Colors.grey[900], // Match the tab bar color from image
-              title: Padding(
-                padding:  EdgeInsets.only(top: 20,left: 10),
-                child: Text(
-                  'Leave Request',
-                  style:  GoogleFonts.gabarito(
+              title: Text(
+                'Benson Saju',
+                style:  GoogleFonts.gabarito(
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
-                  fontSize: 17
-                  ),
+                    fontSize: 17
                 ),
               ),
               bottom: TabBar(
@@ -64,8 +66,8 @@ class _LeaveRequestTabsState extends State<LeaveRequestTabs>
                 labelColor: Colors.white, // White text for selected tab
                 unselectedLabelColor: Colors.grey[400], // Light grey for unselected
                 tabs: [
-                  Tab(text: 'Request'),
-                  Tab(text: 'History'),
+                  Tab(text: 'Reimb..Request'),
+                  Tab(text: 'Reimb..History'),
                 ],
                 labelStyle:  GoogleFonts.gabarito(
                   fontSize: 16,
@@ -78,8 +80,8 @@ class _LeaveRequestTabsState extends State<LeaveRequestTabs>
           body: TabBarView(
             controller: _tabController,
             children: [
-              Request(),
-              History(),
+              AddReim(),
+              ReimHistory(),
             ],
           ),
         ),

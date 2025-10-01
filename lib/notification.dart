@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Notification_page extends StatelessWidget {
   const Notification_page({super.key});
@@ -22,7 +23,7 @@ class Notification_page extends StatelessWidget {
                       Navigator.pop(context);
                     }, icon: Icon(CupertinoIcons.back,color: Colors.white,size: 35,)),
                     SizedBox(width: 20,),
-                    Text('Notifications',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 22),)
+                    Text('Notifications',style:  GoogleFonts.gabarito(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 22),)
                   ],                ),
               ),
               Expanded(child: Container(
@@ -34,7 +35,7 @@ class Notification_page extends StatelessWidget {
                       SizedBox(height: 20,),
                       Icon(Icons.notifications_off_outlined,size: 35,color: Colors.grey.shade400,),
                       SizedBox(height: 10,),
-                      Text('No Notifications',style: TextStyle(fontSize: 22,color: Colors.grey.shade400),)
+                      Text('No Notifications',style:  GoogleFonts.gabarito(fontSize: 22,color: Colors.grey.shade400),)
                     ],
                   ),
               ),)

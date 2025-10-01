@@ -169,6 +169,7 @@
 // }
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Addtrip extends StatelessWidget {
   const Addtrip({super.key});
@@ -201,7 +202,7 @@ class Addtrip extends StatelessWidget {
                     SizedBox(width: 20),
                     Text(
                       'start trip',
-                      style: TextStyle(
+                      style:  GoogleFonts.gabarito(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                         fontSize: 18,
@@ -221,7 +222,7 @@ class Addtrip extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           SizedBox(height: 20),
-                          Text('odometers photo', style: TextStyle(fontSize: 12,color: Colors.grey.shade600)),
+                          Text('odometers photo', style:  GoogleFonts.gabarito(fontSize: 12,color: Colors.grey.shade600)),
                           SizedBox(height: 10),
                           Container(
                             height: 200,
@@ -240,7 +241,7 @@ class Addtrip extends StatelessWidget {
                                 Center(
                                   child: Text(
                                     'please add an odometer photo',
-                                    style: TextStyle(
+                                    style:  GoogleFonts.gabarito(
                                       color: Colors.grey.shade500,
                                       fontSize: 16,
                                     ),
@@ -252,13 +253,13 @@ class Addtrip extends StatelessWidget {
                           SizedBox(height: 20),
                           Text(
                             ' initial odometer reading',
-                            style: TextStyle(fontSize: 12,color: Colors.grey.shade600),
+                            style:  GoogleFonts.gabarito(fontSize: 12,color: Colors.grey.shade600),
                           ),
                           SizedBox(height: 7),
                           TextFormField(
                             decoration: InputDecoration(
                               hintText: 'eg 160.5',
-                              hintStyle: TextStyle(color: Colors.grey.shade400,fontSize: 14),
+                              hintStyle:  GoogleFonts.gabarito(color: Colors.grey.shade400,fontSize: 14),
                               border: OutlineInputBorder(
                                 borderSide: BorderSide(
                                   color: Colors.grey.shade400,
@@ -279,7 +280,7 @@ class Addtrip extends StatelessWidget {
                           SizedBox(height: 20),
                           Text(
                             ' Notes',
-                            style: TextStyle(
+                            style:  GoogleFonts.gabarito(
                               fontSize: 12,
                               color: Colors.grey.shade600,
                             ),
@@ -289,7 +290,7 @@ class Addtrip extends StatelessWidget {
                             maxLines: 3,
                             decoration: InputDecoration(
                               hintText: 'note for start of a trip',
-                              hintStyle: TextStyle(color: Colors.grey.shade400,fontSize: 14),
+                              hintStyle:  GoogleFonts.gabarito(color: Colors.grey.shade400,fontSize: 14),
 
                               border: OutlineInputBorder(
                                 borderSide: BorderSide(
@@ -319,7 +320,7 @@ class Addtrip extends StatelessWidget {
                             child: Center(
                               child: Text(
                                 'Start trip',
-                                style: TextStyle(
+                                style:  GoogleFonts.gabarito(
                                   color: Colors.white,
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,

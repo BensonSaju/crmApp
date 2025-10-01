@@ -1,4 +1,6 @@
+import 'package:crmapp/request_leave.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Request extends StatefulWidget {
   const Request({super.key});
@@ -32,7 +34,7 @@ class _RequestState extends State<Request> {
                 SizedBox(height: 10,),
                 Padding(
                   padding:  EdgeInsets.only(left: 20),
-                  child: Text('Leave a Request',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+                  child: Text('Leave a Request',style:  GoogleFonts.gabarito(fontWeight: FontWeight.bold,fontSize: 20),),
                 ),
                 SizedBox(height: 20,),
                 Row(
@@ -43,7 +45,7 @@ class _RequestState extends State<Request> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Privilege',style: TextStyle(fontWeight: FontWeight.bold),),
+                          Text('Privilege',style:  GoogleFonts.gabarito(fontWeight: FontWeight.bold),),
                           Text('0'),
                         ],
                       ),
@@ -62,7 +64,7 @@ class _RequestState extends State<Request> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Sick leave',style: TextStyle(fontWeight: FontWeight.bold),),
+                          Text('Sick leave',style:  GoogleFonts.gabarito(fontWeight: FontWeight.bold),),
                           Text('0'),
                         ],
                       ),
@@ -81,7 +83,7 @@ class _RequestState extends State<Request> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Casual leave',style: TextStyle(fontWeight: FontWeight.bold),),
+                          Text('Casual leave',style:  GoogleFonts.gabarito(fontWeight: FontWeight.bold),),
                           Text('0'),
                         ],
                       ),
@@ -101,7 +103,7 @@ class _RequestState extends State<Request> {
                 SizedBox(height: 10,),
                 Padding(
                   padding:  EdgeInsets.only(top: 10,left: 20),
-                  child: Text('Pending Requests',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                  child: Text('Pending Requests',style:  GoogleFonts.gabarito(fontSize: 18,fontWeight: FontWeight.bold),),
                 )
               ],
             ),
@@ -122,9 +124,11 @@ class _RequestState extends State<Request> {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(30)
           ),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) =>LeaveRequestPage() ,));
+          },
           backgroundColor: Colors.greenAccent.shade700,
-          child: Text('Request Leave',style: TextStyle(fontSize: 18,color: Colors.white),),)
+          child: Text('Request Leave',style:  GoogleFonts.gabarito(fontSize: 18,color: Colors.white),),)
       )
     );
   }

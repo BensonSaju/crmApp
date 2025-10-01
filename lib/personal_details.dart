@@ -913,6 +913,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 
 class PersonalDetailsScreen extends StatefulWidget {
@@ -953,9 +954,9 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
               ),
             ),
             onPressed: () {},
-            child: const Text(
+            child:   Text(
               "Save Details",
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+              style:  GoogleFonts.gabarito(fontSize: 16, fontWeight: FontWeight.w500),
             ),
           ),
         ),
@@ -990,7 +991,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                       SizedBox(width: 15),
                       Text(
                       'Personal Details',
-                      style: TextStyle(
+                      style:  GoogleFonts.gabarito(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
@@ -1007,7 +1008,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Icon(Icons.picture_as_pdf_outlined, color: Colors.white, size: 22),
-                            Text('Biodata', style: TextStyle(color: Colors.white)),
+                            Text('Biodata', style:  GoogleFonts.gabarito(color: Colors.white)),
                         ],
                       ),
                     ),
@@ -1160,7 +1161,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                                   child: Text(value == '' ? 'eg. Male' : value),
                                 );
                               }).toList(),
-                              hint:   Text('eg. Male', style: TextStyle(color: Colors.grey)),
+                              hint:   Text('eg. Male', style:  GoogleFonts.gabarito(color: Colors.grey)),
                               isExpanded: true,
                             ),
                           ),
@@ -1205,7 +1206,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                                   child: Text(value == '' ? 'eg. Unmarried' : value),
                                 );
                               }).toList(),
-                              hint:   Text('eg. Unmarried', style: TextStyle(color: Colors.grey)),
+                              hint:   Text('eg. Unmarried', style:  GoogleFonts.gabarito(color: Colors.grey)),
                               isExpanded: true,
                             ),
                           ),
@@ -1250,7 +1251,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                                   child: Text(value == '' ? 'eg. O+' : value),
                                 );
                               }).toList(),
-                              hint:   Text('eg. O+', style: TextStyle(color: Colors.grey)),
+                              hint:   Text('eg. O+', style:  GoogleFonts.gabarito(color: Colors.grey)),
                               isExpanded: true,
                             ),
                           ),
@@ -1401,7 +1402,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
   Widget _buildSectionTitle(String title) {
     return Text(
       title,
-      style: const TextStyle(
+      style:    GoogleFonts.gabarito(
         color: Colors.grey,
         fontSize: 14,
         fontWeight: FontWeight.w500,
@@ -1418,7 +1419,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
 
     // Show success message
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
+        SnackBar(
         content: Text('Personal details saved successfully!'),
         backgroundColor: Colors.green,
       ),

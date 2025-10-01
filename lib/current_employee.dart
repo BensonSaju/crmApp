@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CurrentEmploymentScreen extends StatefulWidget {
   const CurrentEmploymentScreen({super.key});
@@ -42,9 +43,9 @@ class _CurrentEmploymentScreenState extends State<CurrentEmploymentScreen> {
               ),
             ),
             onPressed: () {},
-            child: const Text(
+            child:   Text(
               "Save Details",
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+              style:  GoogleFonts.gabarito(fontSize: 16, fontWeight: FontWeight.w500),
             ),
           ),
         ),
@@ -79,7 +80,7 @@ class _CurrentEmploymentScreenState extends State<CurrentEmploymentScreen> {
                     SizedBox(width: 15),
                     Text(
                       'Current Employment',
-                      style: TextStyle(
+                      style:  GoogleFonts.gabarito(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
@@ -96,7 +97,7 @@ class _CurrentEmploymentScreenState extends State<CurrentEmploymentScreen> {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Icon(Icons.picture_as_pdf_outlined, color: Colors.white, size: 22),
-                          Text('Biodata', style: TextStyle(color: Colors.white)),
+                          Text('Biodata', style:  GoogleFonts.gabarito(color: Colors.white)),
                         ],
                       ),
                     ),
@@ -205,7 +206,7 @@ class _CurrentEmploymentScreenState extends State<CurrentEmploymentScreen> {
                                   child: Text(value),
                                 );
                               }).toList(),
-                              hint: Text('eg. Full Time', style: TextStyle(color: Colors.grey)),
+                              hint: Text('eg. Full Time', style:  GoogleFonts.gabarito(color: Colors.grey)),
                               isExpanded: true,
                             ),
                           ),
@@ -425,7 +426,7 @@ class _CurrentEmploymentScreenState extends State<CurrentEmploymentScreen> {
   Widget _buildSectionTitle(String title) {
     return Text(
       title,
-      style: TextStyle(
+      style:  GoogleFonts.gabarito(
         color: Colors.grey,
         fontSize: 14,
         fontWeight: FontWeight.w500,

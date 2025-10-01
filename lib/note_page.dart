@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class NotePage extends StatelessWidget {
   const NotePage({super.key});
@@ -22,93 +23,10 @@ class NotePage extends StatelessWidget {
                       Navigator.pop(context);
                     }, icon: Icon(CupertinoIcons.back,color: Colors.black,size: 35,)),
                     SizedBox(width: 20,),
-                    Text('My notes',style: TextStyle(color: Colors.black,fontSize: 22),)
+                    Text('My notes',style:  GoogleFonts.gabarito(color: Colors.black,fontSize: 22),)
                   ],                ),
               ),
-              // Expanded(child: Container(
-              //   width: double.infinity,
-              //   color: Colors.white,
-              //   child:
-              //   ListView.builder(itemCount: 1,itemBuilder: (context, index) {
-              //     return ListTile(
-              //       leading: Container(height: 50,
-              //       width: 50,
-              //       decoration: BoxDecoration(
-              //         shape: BoxShape.circle,
-              //         color: Colors.teal,
-              //       ),),
-              //       title: Text('Benson Saju',style: TextStyle(fontSize: 16),),
-              //       subtitle: Text('Hello',style: TextStyle(fontSize: 16),),
-              //       trailing: SizedBox(
-              //         width: 100,
-              //         child: Column(
-              //           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              //           crossAxisAlignment: CrossAxisAlignment.end,
-              //           children: [
-              //             Text('20 sept 2025',style: TextStyle(fontSize: 12,color: Colors.grey),),                          SizedBox(width: 20,),
-              //             Icon(Icons.wechat_outlined,color: Colors.teal,size: 27,),
-              //           ],
-              //         ),
-              //       ),
-              //
-              //     );
-              //
-              //   },
-              //
-              //   )
-              // ),),
-              // Expanded(
-              //   child: Container(
-              //     width: double.infinity,
-              //     color: Colors.white,
-              //     child: ListView.separated(
-              //       itemCount: 2,
-              //       itemBuilder: (context, index) {
-              //         return ListTile(
-              //           leading: Container(
-              //             height: 50,
-              //             width: 50,
-              //             decoration:  BoxDecoration(
-              //               shape: BoxShape.circle,
-              //               color: Colors.teal,
-              //             ),
-              //           ),
-              //           title:  Text(
-              //             'Benson Saju',
-              //             style: TextStyle(fontSize: 16),
-              //           ),
-              //           subtitle:  Text(
-              //             'Hello',
-              //             style: TextStyle(fontSize: 16),
-              //           ),
-              //           trailing: SizedBox(
-              //             width: 100,
-              //             child: Column(
-              //               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              //               crossAxisAlignment: CrossAxisAlignment.end,
-              //               children:  [
-              //                 Text(
-              //                   '20 Sept 2025',
-              //                   style: TextStyle(fontSize: 12, color: Colors.grey),
-              //                 ),
-              //                 Icon(
-              //                   Icons.wechat_outlined,
-              //                   color: Colors.teal,
-              //                   size: 27,
-              //                 ),
-              //               ],
-              //             ),
-              //           ),
-              //         );
-              //       },
-              //       separatorBuilder: (context, index) =>  Divider(
-              //         thickness: 1,
-              //         color: Colors.grey.shade300,
-              //          // 👈 makes divider start after avatar (like WhatsApp)
-              //       ),
-              //     ),
-              //   ),
-              // ),
+
               Expanded(
                 child: Container(
                   width: double.infinity,
@@ -126,15 +44,15 @@ class NotePage extends StatelessWidget {
                                 shape: BoxShape.circle,
                                 color: Colors.blueAccent,
                               ),
-                              child: Center(child: Text('B',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,color: Colors.white),)),
+                              child: Center(child: Text('B',style:  GoogleFonts.gabarito(fontSize: 30,fontWeight: FontWeight.bold,color: Colors.white),)),
                             ),
-                            title: const Text(
+                            title:   Text(
                               'Benson Saju',
-                              style: TextStyle(fontSize: 16),
+                              style:  GoogleFonts.gabarito(fontSize: 16),
                             ),
-                            subtitle: const Text(
+                            subtitle:   Text(
                               'Hello',
-                              style: TextStyle(fontSize: 16),
+                              style:  GoogleFonts.gabarito(fontSize: 16),
                             ),
                             trailing: SizedBox(
                               width: 100,
@@ -144,7 +62,7 @@ class NotePage extends StatelessWidget {
                                 children:  [
                                   Text(
                                     '20 Sept 2025',
-                                    style: TextStyle(fontSize: 12, color: Colors.grey),
+                                    style:  GoogleFonts.gabarito(fontSize: 12, color: Colors.grey),
                                   ),
                                   Icon(
                                     Icons.wechat_outlined,
@@ -178,7 +96,7 @@ class NotePage extends StatelessWidget {
                         child: TextFormField(
                         decoration: InputDecoration(
                           hintText: 'save a notes...',
-                          hintStyle: TextStyle(color: Colors.grey,fontSize: 16),
+                          hintStyle:  GoogleFonts.gabarito(color: Colors.grey,fontSize: 16),
                           fillColor: Colors.white,
                           filled: true,
                           prefixIcon: Icon(CupertinoIcons.camera_circle,color: Colors.teal,size: 34,),

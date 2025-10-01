@@ -2,6 +2,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class BankAccountDetailsScreen extends StatefulWidget {
   const BankAccountDetailsScreen({super.key});
@@ -38,9 +39,9 @@ class _BankAccountDetailsScreenState extends State<BankAccountDetailsScreen> {
               ),
             ),
             onPressed: () {},
-            child: const Text(
+            child:   Text(
               "Save Details",
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+              style:  GoogleFonts.gabarito(fontSize: 16, fontWeight: FontWeight.w500),
             ),
           ),
         ),
@@ -85,7 +86,7 @@ class _BankAccountDetailsScreenState extends State<BankAccountDetailsScreen> {
                     Expanded(
                       child: Text(
                         "Benson Saju's Bank Account Details",
-                        style: TextStyle(
+                        style:  GoogleFonts.gabarito(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
                           color: Colors.black87,
@@ -301,7 +302,7 @@ class _BankAccountDetailsScreenState extends State<BankAccountDetailsScreen> {
   Widget _buildSectionTitle(String title) {
     return Text(
       title,
-      style: TextStyle(
+      style:  GoogleFonts.gabarito(
         color: Colors.grey,
         fontSize: 14,
         fontWeight: FontWeight.w500,

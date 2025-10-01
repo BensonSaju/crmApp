@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CustomDetailsScreen extends StatelessWidget {
   const CustomDetailsScreen({super.key});
@@ -36,7 +37,7 @@ class CustomDetailsScreen extends StatelessWidget {
                     SizedBox(width: 15),
                     Text(
                       'Custom Details',
-                      style: TextStyle(
+                      style:  GoogleFonts.gabarito(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
@@ -66,7 +67,7 @@ class CustomDetailsScreen extends StatelessWidget {
                         // Title
                         Text(
                           'No Custom Fields Added',
-                          style: TextStyle(
+                          style:  GoogleFonts.gabarito(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
                             color: Colors.grey.shade700,
@@ -78,7 +79,7 @@ class CustomDetailsScreen extends StatelessWidget {
                         Text(
                           'Create custom fields to store your staff\'s details,\nFor Example: Laptop S.No., Badge Number, etc.',
                           textAlign: TextAlign.center,
-                          style: TextStyle(
+                          style:  GoogleFonts.gabarito(
                             fontSize: 14,
                             color: Colors.grey.shade600,
                             height: 1.5,

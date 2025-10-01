@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Annoucementpage extends StatefulWidget {
   const Annoucementpage({super.key});
@@ -46,7 +47,7 @@ class _AnnoucementpageState extends State<Annoucementpage> {
                     SizedBox(width: 25),
                     Text(
                       'Announcements',
-                      style: TextStyle(
+                      style:  GoogleFonts.gabarito(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
                       ),
@@ -69,7 +70,7 @@ class _AnnoucementpageState extends State<Annoucementpage> {
                         Center(
                           child: Text(
                             'No Announcements',
-                            style: TextStyle(
+                            style:  GoogleFonts.gabarito(
                               fontWeight: FontWeight.bold,
                               fontSize: 20,
                               color: Colors.grey.shade300,

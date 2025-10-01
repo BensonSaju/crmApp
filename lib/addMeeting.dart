@@ -336,6 +336,7 @@
 //   }
 // }
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Addmeeting extends StatefulWidget {
   const Addmeeting({super.key});
@@ -374,10 +375,10 @@ class _AddmeetingState extends State<Addmeeting> {
                         },
                         icon:  Icon(Icons.arrow_back, color: Colors.white, size: 35),
                       ),
-                      const SizedBox(width: 20),
-                      const Text(
+                        SizedBox(width: 20),
+                        Text(
                         'Add Meeting',
-                        style: TextStyle(color: Colors.white, fontSize: 22),
+                        style:  GoogleFonts.gabarito(color: Colors.white, fontSize: 22),
                       ),
                     ],
                   ),
@@ -397,13 +398,13 @@ class _AddmeetingState extends State<Addmeeting> {
                             // Single full-width field
                             Text(
                               'Customer Name',
-                              style: TextStyle(fontSize: 13, color: Colors.grey.shade600),
+                              style:  GoogleFonts.gabarito(fontSize: 13, color: Colors.grey.shade600),
                             ),
                             SizedBox(height: 7),
                             TextFormField(
                               decoration: InputDecoration(
                                 hintText: 'eg Bensin Johny',
-                                hintStyle: TextStyle(color: Colors.grey.shade400, fontSize: 14),
+                                hintStyle:  GoogleFonts.gabarito(color: Colors.grey.shade400, fontSize: 14),
                                 border: OutlineInputBorder(
                                   borderSide: BorderSide(color: Colors.grey.shade400),
                                 ),
@@ -427,14 +428,14 @@ class _AddmeetingState extends State<Addmeeting> {
                                     children: [
                                       Text(
                                         'Start Time',
-                                        style: TextStyle(
+                                        style:  GoogleFonts.gabarito(
                                             fontSize: 13, color: Colors.grey.shade600),
                                       ),
                                       SizedBox(height: 7),
                                       TextFormField(
                                         decoration: InputDecoration(
                                           hintText: 'Start Time',
-                                          hintStyle: TextStyle(
+                                          hintStyle:  GoogleFonts.gabarito(
                                               color: Colors.grey.shade400, fontSize: 14),
                                           border: OutlineInputBorder(
                                             borderSide: BorderSide(color: Colors.grey.shade400),
@@ -459,14 +460,14 @@ class _AddmeetingState extends State<Addmeeting> {
                                     children: [
                                       Text(
                                         'End Time',
-                                        style: TextStyle(
+                                        style:  GoogleFonts.gabarito(
                                             fontSize: 13, color: Colors.grey.shade600),
                                       ),
                                       const SizedBox(height: 7),
                                       TextFormField(
                                         decoration: InputDecoration(
                                           hintText: 'End Time',
-                                          hintStyle: TextStyle(
+                                          hintStyle:  GoogleFonts.gabarito(
                                               color: Colors.grey.shade400, fontSize: 14),
                                           border: OutlineInputBorder(
                                             borderSide: BorderSide(color: Colors.grey.shade400),
@@ -487,7 +488,7 @@ class _AddmeetingState extends State<Addmeeting> {
                             SizedBox(height: 20),
                             Text(
                               ' Notes',
-                              style: TextStyle(
+                              style:  GoogleFonts.gabarito(
                                 fontSize: 12,
                                 color: Colors.grey.shade600,
                               ),
@@ -497,7 +498,7 @@ class _AddmeetingState extends State<Addmeeting> {
                               maxLines: 3,
                               decoration: InputDecoration(
                                 hintText: 'note for start of a trip',
-                                hintStyle: TextStyle(color: Colors.grey.shade400,fontSize: 14),
+                                hintStyle:  GoogleFonts.gabarito(color: Colors.grey.shade400,fontSize: 14),
 
                                 border: OutlineInputBorder(
                                   borderSide: BorderSide(
@@ -519,7 +520,7 @@ class _AddmeetingState extends State<Addmeeting> {
                             SizedBox(height: 20,),
                             Text(
                               ' Add Attachments',
-                              style: TextStyle(
+                              style:  GoogleFonts.gabarito(
                                 fontSize: 12,
                                 color: Colors.grey.shade600,
                               ),
@@ -534,7 +535,7 @@ class _AddmeetingState extends State<Addmeeting> {
                                   border: Border.all(color: Colors.blueAccent)
 
                               ),
-                              child: Center(child: Text('ADD File',style: TextStyle(color: Colors.blueAccent,fontWeight: FontWeight.bold),)),
+                              child: Center(child: Text('ADD File',style:  GoogleFonts.gabarito(color: Colors.blueAccent,fontWeight: FontWeight.bold),)),
                             ),
                             SizedBox(height: 230,),
                             Container(
@@ -547,7 +548,7 @@ class _AddmeetingState extends State<Addmeeting> {
 
                               ),
                               child: Center(child: Text('ADD Meeting'
-                                  '',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)),
+                                  '',style:  GoogleFonts.gabarito(color: Colors.white,fontWeight: FontWeight.bold),)),
                             ),
                           ],
                         ),

@@ -38,6 +38,7 @@ import 'package:crmapp/crmpage.dart';
 import 'package:crmapp/demomap.dart';
 import 'package:crmapp/homescreen.dart';
 import 'package:crmapp/mappage.dart';
+import 'package:crmapp/splashScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -62,7 +63,7 @@ class MyApp extends StatelessWidget {
     // Set the status bar color here
     SystemChrome.setSystemUIOverlayStyle(
       const SystemUiOverlayStyle(
-        statusBarColor: Colors.red,
+        statusBarColor: Colors.black,
         statusBarIconBrightness: Brightness.light, // Use light icons on red background
         statusBarBrightness: Brightness.dark, // For iOS
       ),
@@ -71,11 +72,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: AnnotatedRegion<SystemUiOverlayStyle>(
         value:  SystemUiOverlayStyle(
-          statusBarColor: Colors.red,
+          statusBarColor: Colors.black,
           statusBarIconBrightness: Brightness.light,
           statusBarBrightness: Brightness.light,
         ),
-        child: Bottomnav(),
+        child: SplashScreen(),
       ),
     );
   }
